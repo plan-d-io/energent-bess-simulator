@@ -20,10 +20,10 @@ First, make sure you have **Python 3.13** installed. We suggest getting it from 
 Then:
 1. Clone this repository, or download and extract its ZIP file (`<> Code` button in the upper right corner > `Download ZIP`) .
 2. Extract the contents of the ZIP to a folder on your disk with write access.
-3. Double-click `setup.cmd`. It creates a private `.venv` and installs the
+3. Double-click `setup.cmd`. A command prompt window will launch. It creates a private `.venv` folder and installs the
    tested dependencies. This might take a while. Make sure to allow it internet access.
-4. When the setup script has finished, double-click `start.cmd`.
-5. Open the local address shown in the terminal if the browser does not open
+4. When the setup script has finished, the command prompt closes automatically. Now, double-click `start.cmd`.
+5. Open the local address shown in the command prompt if the browser does not open
    automatically.
 
 For any use after this, just use `start.cmd` again. To close the app, close your browser and the command prompt window.
