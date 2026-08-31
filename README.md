@@ -5,7 +5,7 @@
 </p>
 
 An analysis tool for behind-the-meter
-battery projects. It reads quarter-hourly Fluvius CSV exports, compares six
+Battery Energy Storage System (BESS) projects. It reads quarter-hourly Fluvius CSV exports, compares six
 dispatch cases for one battery, or it can screen a range of battery sizes.
 
 The application is intended for expert users. Its results are estimates under
