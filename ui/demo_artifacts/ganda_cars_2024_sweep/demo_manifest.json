@@ -1,0 +1,85 @@
+{
+  "source_run_label": "Curated Ganda Cars 2024 battery-size sweep",
+  "copied_filenames": [
+    "sweep_request.json",
+    "run_status.json",
+    "run_events.jsonl",
+    "run.log",
+    "normalized_input.parquet",
+    "validation_report.json",
+    "sweep_summary.json",
+    "sweep_summary.csv",
+    "sweep_summary.parquet",
+    "site_analysis.json",
+    "sweep_metadata.json",
+    "resolved_config.json",
+    "source_defaults.toml"
+  ],
+  "files": [
+    {
+      "name": "sweep_request.json",
+      "bytes": 18313,
+      "sha256": "8cee2110e0420a7dcbe230767888170c868cad9ee17efc6eced1c92b6ee2df8e"
+    },
+    {
+      "name": "run_status.json",
+      "bytes": 556,
+      "sha256": "fefe845e6cbacb984f40164b8d8d43be613fbdca2877efae5d136f98c01057b9"
+    },
+    {
+      "name": "run_events.jsonl",
+      "bytes": 17646,
+      "sha256": "85c141b5a19a34772453c564a901d858d17ebe01198cd5c3125e2bbff7b62196"
+    },
+    {
+      "name": "run.log",
+      "bytes": 5278,
+      "sha256": "a57595aec5f18530d9ad5bfbf881c8c28f0c689b6b26e0f363fc5c514b8641cd"
+    },
+    {
+      "name": "normalized_input.parquet",
+      "bytes": 794092,
+      "sha256": "aad87e7ad071354f7b0ab4ff7d476a3403a0a6604ebc03af9100c4271066ee11"
+    },
+    {
+      "name": "validation_report.json",
+      "bytes": 9924,
+      "sha256": "9193ec53cd5f5bdea788690f1bb239e3d3106b2e0077b7c3ed653c476ed82338"
+    },
+    {
+      "name": "sweep_summary.json",
+      "bytes": 51475,
+      "sha256": "bc145c3fa6aa950ee94c6847087ab0fef439382ab95cbcd6b75bbcb2c466334a"
+    },
+    {
+      "name": "sweep_summary.csv",
+      "bytes": 10113,
+      "sha256": "0735bd1cb68bbbb2b2857ac8ae17a675737547dc4d4e31b3c31d5e9ba9b16480"
+    },
+    {
+      "name": "sweep_summary.parquet",
+      "bytes": 32992,
+      "sha256": "ad4b937ce00d50f0580579dbf6b4a2b00e99510bcf2e0ffd403c55cfbcb5928f"
+    },
+    {
+      "name": "site_analysis.json",
+      "bytes": 5730,
+      "sha256": "b05d757c53e1b446ca779b43d4c4792c37c32b2603c25464a4ae811262e5a8ba"
+    },
+    {
+      "name": "sweep_metadata.json",
+      "bytes": 6251,
+      "sha256": "4790eca8efd8c5fe4e9cf898b0481148bffa32d3f694fe221fcd773d428e034b"
+    },
+    {
+      "name": "resolved_config.json",
+      "bytes": 3227,
+      "sha256": "19d1ca6f01da3db2c5832c1e8def608ab38dd72f8220576551e791c26998dc66"
+    },
+    {
+      "name": "source_defaults.toml",
+      "bytes": 1783,
+      "sha256": "66df47683d8d431139e53c8f014a569ab47b76cd74b9db2999637de261b6d7e3"
+    }
+  ]
+}

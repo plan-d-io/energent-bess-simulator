@@ -1,0 +1,75 @@
+{
+  "manifest_version": "1.0.0",
+  "dataset": "belgium_day_ahead_prices_qh",
+  "description": "Belgian bidding-zone day-ahead wholesale energy prices aligned to physical 15-minute UTC intervals.",
+  "file": "da_prices_qh.parquet",
+  "file_size_bytes": 2253629,
+  "sha256": "20d11bf9d3296412b7ae24fef8972d30bc7b8b8977dff7f2fac51502bcbcd646",
+  "rows": 403964,
+  "coverage_utc": [
+    "2015-01-04T23:00:00Z",
+    "2026-07-13T21:45:00Z"
+  ],
+  "columns": {
+    "datetime_utc": "Timezone-aware UTC interval start.",
+    "da_price_eur_mwh": "Belgian day-ahead energy price in EUR/MWh.",
+    "native_resolution": "Source market-time-unit duration: PT60M or PT15M.",
+    "upsampled_from_hourly": "True when one hourly source price was repeated over four quarter-hours.",
+    "source_file": "Original ENTSO-E GUI Energy Prices CSV filename."
+  },
+  "source": {
+    "dataset": "entsoe_gui_energy_prices",
+    "downloaded_utc": "2026-07-12",
+    "source_files": "GUI_ENERGY_PRICES annual CSV exports for 2015 through 2026"
+  },
+  "build_provenance": {
+    "built_at_utc": "2026-08-14T17:18:21Z",
+    "legacy_pipeline_version": "1.0.0",
+    "legacy_git_commit": "8208d06"
+  },
+  "resolution": {
+    "physical_interval_minutes": 15,
+    "native_hourly_rows_after_alignment": 376508,
+    "native_quarter_hour_rows": 27456,
+    "hourly_prices_repeated_to_quarter_hours_before_delivery_day": "2025-10-01",
+    "method": "Hourly prices are repeated over their four physical quarter-hours; they are not interpolated."
+  },
+  "validation": {
+    "passed": true,
+    "timezone": "UTC",
+    "unique_timestamps": 403964,
+    "duplicate_timestamps": 0,
+    "missing_values": 0,
+    "non_finite_prices": 0,
+    "non_15_minute_steps": 0,
+    "sequence_collisions": 0,
+    "continuous_between_coverage_bounds": true
+  },
+  "price_statistics_eur_per_mwh": {
+    "minimum": -500.0,
+    "mean": 78.222155,
+    "median": 53.1,
+    "maximum": 1038.25,
+    "negative_intervals": 7518,
+    "zero_price_intervals": 774
+  },
+  "calendar_year_2024": {
+    "rows": 35136,
+    "coverage_utc": [
+      "2024-01-01T00:00:00Z",
+      "2024-12-31T23:45:00Z"
+    ],
+    "complete": true,
+    "minimum_eur_per_mwh": -140.0,
+    "mean_eur_per_mwh": 70.322199,
+    "maximum_eur_per_mwh": 565.46,
+    "negative_intervals": 1616
+  },
+  "notes": [
+    "The UTC index avoids ambiguity at Belgian daylight-saving-time changes.",
+    "Negative prices are valid input and must not be clipped.",
+    "Prices are wholesale day-ahead references without supplier margins, imbalance fees, taxes, multipliers, or other contract-specific adjustments.",
+    "Intraday prices are not included.",
+    "The complete project-level source Parquet should not be copied into every simulation folder; record its hash and retain the selected aligned prices in the run artifacts."
+  ]
+}

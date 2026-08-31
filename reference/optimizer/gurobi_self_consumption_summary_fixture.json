@@ -1,0 +1,45 @@
+{
+  "artifact_schema_version": 2,
+  "case": "self_consumption_first",
+  "solver": {
+    "name": "Gurobi",
+    "gurobipy_version": "13.0.1",
+    "status": "OPTIMAL",
+    "runtime_s": 0.004999876022338867,
+    "num_vars": 9,
+    "num_constrs": 13,
+    "num_int_vars": 0,
+    "num_bin_vars": 0,
+    "continuous_lp": true,
+    "production_backend": false
+  },
+  "objective_steps": [
+    {
+      "priority": 1,
+      "label": "Additional PV energy delivered from the battery to the customer",
+      "result": 0.22768670309653916,
+      "unit": "kWh",
+      "solver_status": "OPTIMAL",
+      "gurobi_status": "OPTIMAL",
+      "runtime_s": 0.0019998550415039062
+    },
+    {
+      "priority": 2,
+      "label": "Lowest annual quarter-hour grid-import peak",
+      "result": 3.0892531876138434,
+      "unit": "kW",
+      "solver_status": "OPTIMAL",
+      "gurobi_status": "OPTIMAL",
+      "runtime_s": 0.0010001659393310547
+    },
+    {
+      "priority": 3,
+      "label": "Sum of monthly quarter-hour grid-import peaks",
+      "result": 3.0892531876138434,
+      "unit": "kW",
+      "solver_status": "OPTIMAL",
+      "gurobi_status": "OPTIMAL",
+      "runtime_s": 0.0019998550415039062
+    }
+  ]
+}

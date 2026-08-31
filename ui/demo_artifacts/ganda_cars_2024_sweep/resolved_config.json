@@ -1,0 +1,108 @@
+{
+  "source": {
+    "defaults_path": "configs/defaults.toml",
+    "defaults_sha256": "66df47683d8d431139e53c8f014a569ab47b76cd74b9db2999637de261b6d7e3",
+    "toml_path": null,
+    "toml_sha256": null,
+    "run_toml_path": null,
+    "run_toml_sha256": null,
+    "cli_overrides": [
+      "output_dir"
+    ]
+  },
+  "value_sources": {
+    "battery": {
+      "usable_energy_kwh": "defaults_toml",
+      "charge_power_kw": "defaults_toml",
+      "discharge_power_kw": "defaults_toml",
+      "charge_efficiency": "defaults_toml",
+      "discharge_efficiency": "defaults_toml",
+      "initial_charge_kwh": "defaults_toml",
+      "max_equivalent_full_cycles_per_year": "defaults_toml"
+    },
+    "tariffs": {
+      "customer_sale_eur_per_mwh": "defaults_toml",
+      "peak_export_eur_per_mwh": "defaults_toml",
+      "offpeak_export_eur_per_mwh": "defaults_toml",
+      "peak_start_local": "defaults_toml",
+      "peak_end_local": "defaults_toml",
+      "weekends_offpeak": "defaults_toml",
+      "timezone": "defaults_toml"
+    },
+    "reporting": {
+      "seasonal_plots": "defaults_toml",
+      "winter_iso_week": "defaults_toml",
+      "spring_iso_week": "defaults_toml",
+      "summer_iso_week": "defaults_toml",
+      "autumn_iso_week": "defaults_toml"
+    },
+    "economics": {
+      "estimated_battery_cost_eur_per_kwh": "defaults_toml"
+    },
+    "sweep": {
+      "evaluation_period_years": "defaults_toml",
+      "default_durations_hours": "defaults_toml",
+      "revenue_capture_threshold_pct": "defaults_toml",
+      "estimated_battery_cost_eur_per_kwh": "defaults_toml"
+    },
+    "output": {
+      "directory": "cli"
+    }
+  },
+  "resolved": {
+    "input": {
+      "normalized_parquet": null,
+      "validation_report": null,
+      "dynamic_injection_prices": null
+    },
+    "output": {
+      "directory": "ui/demo_artifacts/ganda_cars_2024_sweep"
+    },
+    "battery": {
+      "e_usable_kwh": 100.0,
+      "p_charge_kw": 50.0,
+      "p_discharge_kw": 50.0,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95,
+      "soc_initial_kwh": 0.0,
+      "max_equivalent_full_cycles_per_year": 400.0
+    },
+    "tariffs": {
+      "customer_sale_eur_per_mwh": 130.0,
+      "peak_export_eur_per_mwh": 60.0,
+      "offpeak_export_eur_per_mwh": 30.0,
+      "peak_start_local": "08:00",
+      "peak_end_local": "20:00",
+      "weekends_offpeak": true,
+      "timezone": "Europe/Brussels"
+    },
+    "reporting": {
+      "seasonal_plots": true,
+      "winter_iso_week": 3,
+      "spring_iso_week": 19,
+      "summer_iso_week": 26,
+      "autumn_iso_week": 41
+    },
+    "economics": {
+      "estimated_battery_cost_eur_per_kwh": 300.0
+    },
+    "sweep": {
+      "estimated_battery_cost_eur_per_kwh": 300.0,
+      "evaluation_period_years": 10.0,
+      "default_durations_hours": [
+        2.0,
+        4.0
+      ],
+      "revenue_capture_threshold_pct": 95.0
+    },
+    "battery_template": {
+      "e_usable_kwh": 100.0,
+      "p_charge_kw": 50.0,
+      "p_discharge_kw": 50.0,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95,
+      "soc_initial_kwh": 0.0,
+      "max_equivalent_full_cycles_per_year": 400.0
+    }
+  }
+}

@@ -1,0 +1,53 @@
+# Shared starting values for new battery-simulator runs.
+# Site-specific input and output paths do not belong here. They remain part of
+# each run's TOML file, CLI arguments, or Streamlit upload workflow.
+
+[battery]
+# Starting battery design for a new simulation. Review these values per site.
+usable_energy_kwh = 100.0
+charge_power_kw = 50.0
+discharge_power_kw = 50.0
+
+# AC-to-stored and stored-to-AC efficiencies, expressed as fractions.
+charge_efficiency = 0.95
+discharge_efficiency = 0.95
+
+# Unified comparisons start empty so energy from before the selected period is
+# not counted as additional PV.
+initial_charge_kwh = 0.0
+
+# Maximum equivalent full cycles per year. Prorated by the selected period's
+# share of local calendar years. Applies to every battery-equipped case.
+max_equivalent_full_cycles_per_year = 400.0
+
+[tariffs]
+# Energent tariffs in EUR/MWh.
+customer_sale_eur_per_mwh = 130.0
+peak_export_eur_per_mwh = 60.0
+offpeak_export_eur_per_mwh = 30.0
+
+# Peak period is inclusive at the start and exclusive at the end. When
+# weekends_offpeak is true, every Saturday and Sunday interval is off-peak.
+peak_start_local = "08:00"
+peak_end_local = "20:00"
+weekends_offpeak = true
+timezone = "Europe/Brussels"
+
+[reporting]
+seasonal_plots = true
+winter_iso_week = 3
+spring_iso_week = 19
+summer_iso_week = 26
+autumn_iso_week = 41
+
+[economics]
+# Shared battery-cost assumption for Evaluate one battery and Find a battery size.
+# Estimated CAPEX is usable capacity (kWh) times this EUR/kWh value.
+estimated_battery_cost_eur_per_kwh = 300.0
+
+[sweep]
+# Screening assumptions used only by the revenue battery-size sweep.
+# Simple payback does not use evaluation_period_years.
+evaluation_period_years = 10.0
+default_durations_hours = [2.0, 4.0]
+revenue_capture_threshold_pct = 95.0

@@ -1,0 +1,589 @@
+{
+  "request_schema_version": 1,
+  "job_id": "btm-20260826T085032Z-37a61b84",
+  "created_at_utc": "2026-08-26T08:50:44Z",
+  "software_version": "0.1.0",
+  "artifact_schema_version": 1,
+  "site_label": "Ganda Cars",
+  "output_dir": "ui/demo_artifacts/ganda_cars_2024_sweep",
+  "period_id": "2024",
+  "allow_unvalidated": true,
+  "acknowledge_site_boundary": false,
+  "detailed_solver_output": false,
+  "fluvius_inputs": [
+    {
+      "path": "Historiek_afname_elektriciteit_541448860020928494_20230830_20251028_kwartiertotalen.csv",
+      "original_name": "Historiek_afname_elektriciteit_541448860020928494_20230830_20251028_kwartiertotalen.csv",
+      "sha256": "c454bd652e669649c6332b9f55cfb3cc8998f5962f83037956c13513477e16c8"
+    },
+    {
+      "path": "Historiek_injectie_elektriciteit_541448860023110711_20231108_20251028_kwartiertotalen.csv",
+      "original_name": "Historiek_injectie_elektriciteit_541448860023110711_20231108_20251028_kwartiertotalen.csv",
+      "sha256": "cc87008792f64f2957933bf8507390ae6a2af5aa24a436bc1f5f4fa2fb105797"
+    },
+    {
+      "path": "Historiek_submeting_elektriciteit_541454897100201803_20231108_20251028_kwartiertotalen.csv",
+      "original_name": "Historiek_submeting_elektriciteit_541454897100201803_20231108_20251028_kwartiertotalen.csv",
+      "sha256": "d30ea57b507e25bf552b9e58ce3d2f14bd75daa0c44bf66e25486dc3f38ca7a7"
+    }
+  ],
+  "defaults_path": "configs/defaults.toml",
+  "defaults_sha256": "66df47683d8d431139e53c8f014a569ab47b76cd74b9db2999637de261b6d7e3",
+  "run_toml_path": null,
+  "run_toml_sha256": null,
+  "battery": {
+    "e_usable_kwh": 100.0,
+    "p_charge_kw": 50.0,
+    "p_discharge_kw": 50.0,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95,
+    "soc_initial_kwh": 0.0,
+    "max_equivalent_full_cycles_per_year": 400.0
+  },
+  "tariffs": {
+    "customer_sale_eur_per_mwh": 130.0,
+    "peak_export_eur_per_mwh": 60.0,
+    "offpeak_export_eur_per_mwh": 30.0,
+    "peak_start_local": "08:00",
+    "peak_end_local": "20:00",
+    "weekends_offpeak": true,
+    "timezone": "Europe/Brussels"
+  },
+  "reporting": {
+    "seasonal_plots": true,
+    "winter_iso_week": 3,
+    "spring_iso_week": 19,
+    "summer_iso_week": 26,
+    "autumn_iso_week": 41
+  },
+  "economics": {
+    "estimated_battery_cost_eur_per_kwh": 300.0
+  },
+  "sweep": {
+    "estimated_battery_cost_eur_per_kwh": 300.0,
+    "evaluation_period_years": 10.0,
+    "default_durations_hours": [
+      2.0,
+      4.0
+    ],
+    "revenue_capture_threshold_pct": 95.0
+  },
+  "mode": "automatic",
+  "durations_hours": [
+    2.0,
+    4.0
+  ],
+  "candidates": [
+    {
+      "candidate_id": "c001_5kW_10kWh",
+      "power_kw": 5.0,
+      "usable_energy_kwh": 10.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c002_10kW_20kWh",
+      "power_kw": 10.0,
+      "usable_energy_kwh": 20.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c003_20kW_40kWh",
+      "power_kw": 20.0,
+      "usable_energy_kwh": 40.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c004_50kW_100kWh",
+      "power_kw": 50.0,
+      "usable_energy_kwh": 100.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c005_100kW_200kWh",
+      "power_kw": 100.0,
+      "usable_energy_kwh": 200.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c006_150kW_300kWh",
+      "power_kw": 150.0,
+      "usable_energy_kwh": 300.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c007_200kW_400kWh",
+      "power_kw": 200.0,
+      "usable_energy_kwh": 400.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c008_250kW_500kWh",
+      "power_kw": 250.0,
+      "usable_energy_kwh": 500.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c009_300kW_600kWh",
+      "power_kw": 300.0,
+      "usable_energy_kwh": 600.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c010_5kW_20kWh",
+      "power_kw": 5.0,
+      "usable_energy_kwh": 20.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c011_10kW_40kWh",
+      "power_kw": 10.0,
+      "usable_energy_kwh": 40.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c012_20kW_80kWh",
+      "power_kw": 20.0,
+      "usable_energy_kwh": 80.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c013_50kW_200kWh",
+      "power_kw": 50.0,
+      "usable_energy_kwh": 200.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c014_100kW_400kWh",
+      "power_kw": 100.0,
+      "usable_energy_kwh": 400.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c015_150kW_600kWh",
+      "power_kw": 150.0,
+      "usable_energy_kwh": 600.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c016_200kW_800kWh",
+      "power_kw": 200.0,
+      "usable_energy_kwh": 800.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c017_250kW_1000kWh",
+      "power_kw": 250.0,
+      "usable_energy_kwh": 1000.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c018_300kW_1200kWh",
+      "power_kw": 300.0,
+      "usable_energy_kwh": 1200.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    }
+  ],
+  "site_analysis": {
+    "quantile_method": "linear",
+    "n_intervals": 35136,
+    "has_positive_import": true,
+    "has_positive_surplus": true,
+    "no_revenue_shifting_opportunity": false,
+    "diagnostic": null,
+    "max_import_kw": 206.8,
+    "p995_import_kw": 96.8,
+    "max_surplus_kw": 227.7,
+    "p995_surplus_kw": 207.9,
+    "total_import_kwh": 54163.45,
+    "total_surplus_kwh": 222212.92500000002,
+    "median_daily_import_kwh": 97.35,
+    "p95_daily_import_kwh": 453.20000000000005,
+    "median_daily_surplus_kwh": 512.1875,
+    "p95_daily_surplus_kwh": 1535.4625,
+    "n_local_days": 366,
+    "reference_power_kw": 207.9,
+    "power_step_kw": 50.0,
+    "rounded_reference_power_kw": 250.0,
+    "power_grid_kw": [
+      5.0,
+      10.0,
+      20.0,
+      50.0,
+      100.0,
+      150.0,
+      200.0,
+      250.0,
+      300.0
+    ],
+    "durations_hours": [
+      2.0,
+      4.0
+    ],
+    "automatic_candidates": [
+      {
+        "candidate_id": "c001_5kW_10kWh",
+        "power_kw": 5.0,
+        "usable_energy_kwh": 10.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c002_10kW_20kWh",
+        "power_kw": 10.0,
+        "usable_energy_kwh": 20.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c003_20kW_40kWh",
+        "power_kw": 20.0,
+        "usable_energy_kwh": 40.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c004_50kW_100kWh",
+        "power_kw": 50.0,
+        "usable_energy_kwh": 100.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c005_100kW_200kWh",
+        "power_kw": 100.0,
+        "usable_energy_kwh": 200.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c006_150kW_300kWh",
+        "power_kw": 150.0,
+        "usable_energy_kwh": 300.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c007_200kW_400kWh",
+        "power_kw": 200.0,
+        "usable_energy_kwh": 400.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c008_250kW_500kWh",
+        "power_kw": 250.0,
+        "usable_energy_kwh": 500.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": true,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c009_300kW_600kWh",
+        "power_kw": 300.0,
+        "usable_energy_kwh": 600.0,
+        "duration_hours": 2.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": true,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c010_5kW_20kWh",
+        "power_kw": 5.0,
+        "usable_energy_kwh": 20.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c011_10kW_40kWh",
+        "power_kw": 10.0,
+        "usable_energy_kwh": 40.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c012_20kW_80kWh",
+        "power_kw": 20.0,
+        "usable_energy_kwh": 80.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c013_50kW_200kWh",
+        "power_kw": 50.0,
+        "usable_energy_kwh": 200.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c014_100kW_400kWh",
+        "power_kw": 100.0,
+        "usable_energy_kwh": 400.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": false,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c015_150kW_600kWh",
+        "power_kw": 150.0,
+        "usable_energy_kwh": 600.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": true,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c016_200kW_800kWh",
+        "power_kw": 200.0,
+        "usable_energy_kwh": 800.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": true,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c017_250kW_1000kWh",
+        "power_kw": 250.0,
+        "usable_energy_kwh": 1000.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": true,
+        "source": "automatic"
+      },
+      {
+        "candidate_id": "c018_300kW_1200kWh",
+        "power_kw": 300.0,
+        "usable_energy_kwh": 1200.0,
+        "duration_hours": 4.0,
+        "exceeds_p95_daily_pv_surplus": false,
+        "exceeds_p95_daily_import": true,
+        "source": "automatic"
+      }
+    ],
+    "candidate_generation_method": "11a.1_engineering_125_with_lower_range"
+  },
+  "removed_duplicates": [],
+  "manual_range": {
+    "min_power_kw": null,
+    "max_power_kw": null,
+    "power_increment_kw": null
+  },
+  "explicit_pairs": [],
+  "value_sources": {
+    "battery": {
+      "usable_energy_kwh": "defaults_toml",
+      "charge_power_kw": "defaults_toml",
+      "discharge_power_kw": "defaults_toml",
+      "charge_efficiency": "defaults_toml",
+      "discharge_efficiency": "defaults_toml",
+      "initial_charge_kwh": "defaults_toml",
+      "max_equivalent_full_cycles_per_year": "defaults_toml"
+    },
+    "tariffs": {
+      "customer_sale_eur_per_mwh": "defaults_toml",
+      "peak_export_eur_per_mwh": "defaults_toml",
+      "offpeak_export_eur_per_mwh": "defaults_toml",
+      "peak_start_local": "defaults_toml",
+      "peak_end_local": "defaults_toml",
+      "weekends_offpeak": "defaults_toml",
+      "timezone": "defaults_toml"
+    },
+    "reporting": {
+      "seasonal_plots": "defaults_toml",
+      "winter_iso_week": "defaults_toml",
+      "spring_iso_week": "defaults_toml",
+      "summer_iso_week": "defaults_toml",
+      "autumn_iso_week": "defaults_toml"
+    },
+    "economics": {
+      "estimated_battery_cost_eur_per_kwh": "defaults_toml"
+    },
+    "sweep": {
+      "evaluation_period_years": "defaults_toml",
+      "default_durations_hours": "defaults_toml",
+      "revenue_capture_threshold_pct": "defaults_toml",
+      "estimated_battery_cost_eur_per_kwh": "defaults_toml"
+    },
+    "output": {
+      "directory": "cli"
+    }
+  },
+  "cli_overrides": [
+    "output_dir"
+  ],
+  "config_audit": {
+    "defaults_path": "configs/defaults.toml",
+    "defaults_sha256": "66df47683d8d431139e53c8f014a569ab47b76cd74b9db2999637de261b6d7e3",
+    "toml_path": null,
+    "toml_sha256": null,
+    "run_toml_path": null,
+    "run_toml_sha256": null,
+    "cli_overrides": [
+      "output_dir"
+    ],
+    "value_sources": {
+      "battery": {
+        "usable_energy_kwh": "defaults_toml",
+        "charge_power_kw": "defaults_toml",
+        "discharge_power_kw": "defaults_toml",
+        "charge_efficiency": "defaults_toml",
+        "discharge_efficiency": "defaults_toml",
+        "initial_charge_kwh": "defaults_toml",
+        "max_equivalent_full_cycles_per_year": "defaults_toml"
+      },
+      "tariffs": {
+        "customer_sale_eur_per_mwh": "defaults_toml",
+        "peak_export_eur_per_mwh": "defaults_toml",
+        "offpeak_export_eur_per_mwh": "defaults_toml",
+        "peak_start_local": "defaults_toml",
+        "peak_end_local": "defaults_toml",
+        "weekends_offpeak": "defaults_toml",
+        "timezone": "defaults_toml"
+      },
+      "reporting": {
+        "seasonal_plots": "defaults_toml",
+        "winter_iso_week": "defaults_toml",
+        "spring_iso_week": "defaults_toml",
+        "summer_iso_week": "defaults_toml",
+        "autumn_iso_week": "defaults_toml"
+      },
+      "economics": {
+        "estimated_battery_cost_eur_per_kwh": "defaults_toml"
+      },
+      "sweep": {
+        "evaluation_period_years": "defaults_toml",
+        "default_durations_hours": "defaults_toml",
+        "revenue_capture_threshold_pct": "defaults_toml",
+        "estimated_battery_cost_eur_per_kwh": "defaults_toml"
+      },
+      "output": {
+        "directory": "cli"
+      }
+    },
+    "resolved": {
+      "input": {
+        "normalized_parquet": null,
+        "validation_report": null,
+        "dynamic_injection_prices": null
+      },
+      "output": {
+        "directory": "ui/demo_artifacts/ganda_cars_2024_sweep",
+        "root": null
+      },
+      "battery": {
+        "e_usable_kwh": 100.0,
+        "p_charge_kw": 50.0,
+        "p_discharge_kw": 50.0,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95,
+        "soc_initial_kwh": 0.0,
+        "max_equivalent_full_cycles_per_year": 400.0
+      },
+      "tariffs": {
+        "customer_sale_eur_per_mwh": 130.0,
+        "peak_export_eur_per_mwh": 60.0,
+        "offpeak_export_eur_per_mwh": 30.0,
+        "peak_start_local": "08:00",
+        "peak_end_local": "20:00",
+        "weekends_offpeak": true,
+        "timezone": "Europe/Brussels"
+      },
+      "reporting": {
+        "seasonal_plots": true,
+        "winter_iso_week": 3,
+        "spring_iso_week": 19,
+        "summer_iso_week": 26,
+        "autumn_iso_week": 41
+      },
+      "economics": {
+        "estimated_battery_cost_eur_per_kwh": 300.0
+      },
+      "sweep": {
+        "estimated_battery_cost_eur_per_kwh": 300.0,
+        "evaluation_period_years": 10.0,
+        "default_durations_hours": [
+          2.0,
+          4.0
+        ],
+        "revenue_capture_threshold_pct": 95.0
+      }
+    }
+  }
+}

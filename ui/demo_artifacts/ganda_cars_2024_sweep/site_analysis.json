@@ -1,0 +1,202 @@
+{
+  "quantile_method": "linear",
+  "n_intervals": 35136,
+  "has_positive_import": true,
+  "has_positive_surplus": true,
+  "no_revenue_shifting_opportunity": false,
+  "diagnostic": null,
+  "max_import_kw": 206.8,
+  "p995_import_kw": 96.8,
+  "max_surplus_kw": 227.7,
+  "p995_surplus_kw": 207.9,
+  "total_import_kwh": 54163.45,
+  "total_surplus_kwh": 222212.92500000002,
+  "median_daily_import_kwh": 97.35,
+  "p95_daily_import_kwh": 453.20000000000005,
+  "median_daily_surplus_kwh": 512.1875,
+  "p95_daily_surplus_kwh": 1535.4625,
+  "n_local_days": 366,
+  "reference_power_kw": 207.9,
+  "power_step_kw": 50.0,
+  "rounded_reference_power_kw": 250.0,
+  "power_grid_kw": [
+    5.0,
+    10.0,
+    20.0,
+    50.0,
+    100.0,
+    150.0,
+    200.0,
+    250.0,
+    300.0
+  ],
+  "durations_hours": [
+    2.0,
+    4.0
+  ],
+  "automatic_candidates": [
+    {
+      "candidate_id": "c001_5kW_10kWh",
+      "power_kw": 5.0,
+      "usable_energy_kwh": 10.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c002_10kW_20kWh",
+      "power_kw": 10.0,
+      "usable_energy_kwh": 20.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c003_20kW_40kWh",
+      "power_kw": 20.0,
+      "usable_energy_kwh": 40.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c004_50kW_100kWh",
+      "power_kw": 50.0,
+      "usable_energy_kwh": 100.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c005_100kW_200kWh",
+      "power_kw": 100.0,
+      "usable_energy_kwh": 200.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c006_150kW_300kWh",
+      "power_kw": 150.0,
+      "usable_energy_kwh": 300.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c007_200kW_400kWh",
+      "power_kw": 200.0,
+      "usable_energy_kwh": 400.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c008_250kW_500kWh",
+      "power_kw": 250.0,
+      "usable_energy_kwh": 500.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c009_300kW_600kWh",
+      "power_kw": 300.0,
+      "usable_energy_kwh": 600.0,
+      "duration_hours": 2.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c010_5kW_20kWh",
+      "power_kw": 5.0,
+      "usable_energy_kwh": 20.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c011_10kW_40kWh",
+      "power_kw": 10.0,
+      "usable_energy_kwh": 40.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c012_20kW_80kWh",
+      "power_kw": 20.0,
+      "usable_energy_kwh": 80.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c013_50kW_200kWh",
+      "power_kw": 50.0,
+      "usable_energy_kwh": 200.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c014_100kW_400kWh",
+      "power_kw": 100.0,
+      "usable_energy_kwh": 400.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": false,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c015_150kW_600kWh",
+      "power_kw": 150.0,
+      "usable_energy_kwh": 600.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c016_200kW_800kWh",
+      "power_kw": 200.0,
+      "usable_energy_kwh": 800.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c017_250kW_1000kWh",
+      "power_kw": 250.0,
+      "usable_energy_kwh": 1000.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    },
+    {
+      "candidate_id": "c018_300kW_1200kWh",
+      "power_kw": 300.0,
+      "usable_energy_kwh": 1200.0,
+      "duration_hours": 4.0,
+      "exceeds_p95_daily_pv_surplus": false,
+      "exceeds_p95_daily_import": true,
+      "source": "automatic"
+    }
+  ],
+  "candidate_generation_method": "11a.1_engineering_125_with_lower_range"
+}

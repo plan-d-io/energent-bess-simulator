@@ -1,0 +1,6 @@
+# Curated artifacts are verified byte-for-byte by their manifests.
+ui/demo_artifacts/** binary
+
+# Binary data and presentation assets must never receive line-ending conversion.
+*.parquet -text
+*.png -text

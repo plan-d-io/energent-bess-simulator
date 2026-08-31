@@ -1,0 +1,53 @@
+2026-08-26T08:50:32Z Run queued
+2026-08-26T08:50:32Z Run started
+2026-08-26T08:50:44Z INFO [1/23 read_fluvius started] Reading and checking the three Fluvius files
+2026-08-26T08:50:55Z WARNING [1/23 read_fluvius started] Additional unused registers or EANs were ignored
+2026-08-26T08:50:55Z WARNING [1/23 read_fluvius started] The selected offtake, injection, and PV series use different EAN codes; series are joined by UTC interval, not EAN
+2026-08-26T08:50:55Z WARNING [1/23 read_fluvius started] Partial calendar years are available and are not labelled as complete years
+2026-08-26T08:50:55Z INFO [1/23 read_fluvius completed] Reading and checking the three Fluvius files
+2026-08-26T08:50:55Z INFO [2/23 normalize_period started] Preparing calendar year 2024 (35,136 quarter-hours)
+2026-08-26T08:50:56Z Prepared Calendar year 2024 (35136 quarter-hours); raw Fluvius CSVs were not copied
+2026-08-26T08:50:56Z INFO [2/23 normalize_period completed] Preparing calendar year 2024 (35,136 quarter-hours)
+2026-08-26T08:50:56Z INFO [3/23 analyse_site started] Analysing the site and preparing battery sizes
+2026-08-26T08:50:56Z INFO [3/23 analyse_site completed] Analysing the site and preparing battery sizes
+2026-08-26T08:50:57Z INFO [4/23 test_candidate started] Testing candidate 1 of 18: 5 kW / 10 kWh
+2026-08-26T08:51:45Z INFO [4/23 test_candidate completed] Testing candidate 1 of 18: 5 kW / 10 kWh
+2026-08-26T08:51:45Z INFO [5/23 test_candidate started] Testing candidate 2 of 18: 10 kW / 20 kWh
+2026-08-26T08:52:24Z INFO [5/23 test_candidate completed] Testing candidate 2 of 18: 10 kW / 20 kWh
+2026-08-26T08:52:24Z INFO [6/23 test_candidate started] Testing candidate 3 of 18: 20 kW / 40 kWh
+2026-08-26T08:53:04Z INFO [6/23 test_candidate completed] Testing candidate 3 of 18: 20 kW / 40 kWh
+2026-08-26T08:53:04Z INFO [7/23 test_candidate started] Testing candidate 4 of 18: 50 kW / 100 kWh
+2026-08-26T08:53:43Z INFO [7/23 test_candidate completed] Testing candidate 4 of 18: 50 kW / 100 kWh
+2026-08-26T08:53:43Z INFO [8/23 test_candidate started] Testing candidate 5 of 18: 100 kW / 200 kWh
+2026-08-26T08:54:23Z INFO [8/23 test_candidate completed] Testing candidate 5 of 18: 100 kW / 200 kWh
+2026-08-26T08:54:23Z INFO [9/23 test_candidate started] Testing candidate 6 of 18: 150 kW / 300 kWh
+2026-08-26T08:55:03Z INFO [9/23 test_candidate completed] Testing candidate 6 of 18: 150 kW / 300 kWh
+2026-08-26T08:55:03Z INFO [10/23 test_candidate started] Testing candidate 7 of 18: 200 kW / 400 kWh
+2026-08-26T08:55:43Z INFO [10/23 test_candidate completed] Testing candidate 7 of 18: 200 kW / 400 kWh
+2026-08-26T08:55:43Z INFO [11/23 test_candidate started] Testing candidate 8 of 18: 250 kW / 500 kWh
+2026-08-26T08:56:22Z INFO [11/23 test_candidate completed] Testing candidate 8 of 18: 250 kW / 500 kWh
+2026-08-26T08:56:22Z INFO [12/23 test_candidate started] Testing candidate 9 of 18: 300 kW / 600 kWh
+2026-08-26T08:57:03Z INFO [12/23 test_candidate completed] Testing candidate 9 of 18: 300 kW / 600 kWh
+2026-08-26T08:57:03Z INFO [13/23 test_candidate started] Testing candidate 10 of 18: 5 kW / 20 kWh
+2026-08-26T08:57:43Z INFO [13/23 test_candidate completed] Testing candidate 10 of 18: 5 kW / 20 kWh
+2026-08-26T08:57:43Z INFO [14/23 test_candidate started] Testing candidate 11 of 18: 10 kW / 40 kWh
+2026-08-26T08:58:25Z INFO [14/23 test_candidate completed] Testing candidate 11 of 18: 10 kW / 40 kWh
+2026-08-26T08:58:25Z INFO [15/23 test_candidate started] Testing candidate 12 of 18: 20 kW / 80 kWh
+2026-08-26T08:59:07Z INFO [15/23 test_candidate completed] Testing candidate 12 of 18: 20 kW / 80 kWh
+2026-08-26T08:59:07Z INFO [16/23 test_candidate started] Testing candidate 13 of 18: 50 kW / 200 kWh
+2026-08-26T08:59:48Z INFO [16/23 test_candidate completed] Testing candidate 13 of 18: 50 kW / 200 kWh
+2026-08-26T08:59:48Z INFO [17/23 test_candidate started] Testing candidate 14 of 18: 100 kW / 400 kWh
+2026-08-26T09:00:27Z INFO [17/23 test_candidate completed] Testing candidate 14 of 18: 100 kW / 400 kWh
+2026-08-26T09:00:27Z INFO [18/23 test_candidate started] Testing candidate 15 of 18: 150 kW / 600 kWh
+2026-08-26T09:01:08Z INFO [18/23 test_candidate completed] Testing candidate 15 of 18: 150 kW / 600 kWh
+2026-08-26T09:01:08Z INFO [19/23 test_candidate started] Testing candidate 16 of 18: 200 kW / 800 kWh
+2026-08-26T09:01:49Z INFO [19/23 test_candidate completed] Testing candidate 16 of 18: 200 kW / 800 kWh
+2026-08-26T09:01:49Z INFO [20/23 test_candidate started] Testing candidate 17 of 18: 250 kW / 1000 kWh
+2026-08-26T09:02:34Z INFO [20/23 test_candidate completed] Testing candidate 17 of 18: 250 kW / 1000 kWh
+2026-08-26T09:02:34Z INFO [21/23 test_candidate started] Testing candidate 18 of 18: 300 kW / 1200 kWh
+2026-08-26T09:03:15Z INFO [21/23 test_candidate completed] Testing candidate 18 of 18: 300 kW / 1200 kWh
+2026-08-26T09:03:15Z INFO [22/23 recommend started] Calculating sizing recommendations
+2026-08-26T09:03:15Z INFO [22/23 recommend completed] Calculating sizing recommendations
+2026-08-26T09:03:15Z INFO [23/23 write_artifacts started] Writing result files
+2026-08-26T09:03:15Z INFO [23/23 write_artifacts completed] Sweep completed
+2026-08-26T09:03:15Z Sweep completed

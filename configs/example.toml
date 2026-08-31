@@ -1,0 +1,30 @@
+# Example run configuration for a normalized site dataset.
+# Paths in this file are resolved relative to this file, not the working directory.
+# Copy and edit; do not put private absolute paths in the committed example.
+#
+# Reusable battery, tariff, and reporting values come from configs/defaults.toml
+# unless a section below overrides them. Edit the central defaults file to change
+# starting values for future runs; already written audit folders are unchanged.
+
+[input]
+# Canonical parquet from btm-normalize for the selected period.
+normalized_parquet = "../outputs/example_run/normalized_input.parquet"
+# validation_report = "../outputs/example_run/validation_report.json"
+
+[output]
+# Create a timestamped btm_compare_* folder inside this root.
+root = "../outputs"
+# Mutually exclusive with root: write to this exact directory instead.
+# directory = "../outputs/my_exact_run"
+
+# A run configuration may override any reusable value for this run only.
+# Uncomment a section when this site should not use the central defaults.
+#
+# [battery]
+# usable_energy_kwh = 150.0
+#
+# [tariffs]
+# customer_sale_eur_per_mwh = 140.0
+#
+# [reporting]
+# seasonal_plots = false

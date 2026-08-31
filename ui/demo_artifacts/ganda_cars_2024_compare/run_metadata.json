@@ -1,0 +1,417 @@
+{
+  "generated_at_utc": "2026-08-26T08:48:36Z",
+  "software_version": "0.1.0",
+  "package": "btm-sim",
+  "artifact_schema_version": 2,
+  "scenario_order": [
+    "no_battery",
+    "reference",
+    "self_consumption",
+    "peak_reduction",
+    "revenue",
+    "dynamic_injection"
+  ],
+  "input": {
+    "original_path": "ui/demo_artifacts/ganda_cars_2024_compare/normalized_input.parquet",
+    "sha256": "aad87e7ad071354f7b0ab4ff7d476a3403a0a6604ebc03af9100c4271066ee11"
+  },
+  "selected_period": {
+    "start_utc": "2023-12-31T23:00:00+00:00",
+    "end_utc_exclusive": "2024-12-31T23:00:00+00:00",
+    "start_local": "2024-01-01T00:00:00+01:00",
+    "end_local_exclusive": "2025-01-01T00:00:00+01:00",
+    "n_intervals": 35136,
+    "kind": "full_calendar_year",
+    "label": "Complete calendar year 2024",
+    "complete_calendar_year": true
+  },
+  "data_quality": {
+    "n_intervals": 35136,
+    "n_validated": 35040,
+    "n_unvalidated": 96,
+    "n_unavailable": 0,
+    "pv_source": "measured_fluvius"
+  },
+  "validation_report": {
+    "path": "ui/demo_artifacts/ganda_cars_2024_sweep/validation_report.json",
+    "sha256": "df3405e32a41ef18c180b805d4da34894020dcf8d97fffb31820ba51289c5514",
+    "ok": true,
+    "warnings": [
+      {
+        "severity": "warning",
+        "code": "UNUSED_REGISTERS",
+        "message": "Additional unused registers or EANs were ignored",
+        "details": {
+          "unused": [
+            {
+              "register": "Afname Capacitief",
+              "eans": [
+                "541448860020928494"
+              ],
+              "n_rows": 75844,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Afname Inductief",
+              "eans": [
+                "541448860020928494"
+              ],
+              "n_rows": 75844,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Afname Reactief",
+              "eans": [
+                "541448860020928494"
+              ],
+              "n_rows": 75844,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Hulpverbruik Actief",
+              "eans": [
+                "541454897100201797"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kWh"
+              ]
+            },
+            {
+              "register": "Hulpverbruik Capacitief",
+              "eans": [
+                "541454897100201797"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Hulpverbruik Inductief",
+              "eans": [
+                "541454897100201797"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Injectie Capacitief",
+              "eans": [
+                "541448860023110711"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Injectie Inductief",
+              "eans": [
+                "541448860023110711"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Productie Capacitief",
+              "eans": [
+                "541454897100201803"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kVArh"
+              ]
+            },
+            {
+              "register": "Productie Inductief",
+              "eans": [
+                "541454897100201803"
+              ],
+              "n_rows": 69120,
+              "units": [
+                "kVArh"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "severity": "warning",
+        "code": "EAN_MISMATCH",
+        "message": "The selected offtake, injection, and PV series use different EAN codes; series are joined by UTC interval, not EAN",
+        "details": {
+          "eans": {
+            "offtake": "541448860020928494",
+            "injection": "541448860023110711",
+            "pv": "541454897100201803"
+          }
+        }
+      },
+      {
+        "severity": "warning",
+        "code": "PARTIAL_CALENDAR_YEARS",
+        "message": "Partial calendar years are available and are not labelled as complete years",
+        "details": {
+          "years": [
+            "2023",
+            "2025"
+          ]
+        }
+      },
+      {
+        "severity": "warning",
+        "code": "UNVALIDATED_USED",
+        "message": "96 non-null Ongevalideerd intervals were used because allow_unvalidated is enabled",
+        "details": {
+          "count": 96,
+          "dates": [
+            "2024-10-02"
+          ],
+          "acknowledged": true
+        }
+      }
+    ],
+    "unvalidated_policy": {
+      "allow_unvalidated": true,
+      "acknowledged": true,
+      "n_unvalidated_in_selected_period": 96,
+      "dates": [
+        "2024-10-02"
+      ]
+    },
+    "site_boundary_policy": {
+      "acknowledge_site_boundary": false
+    },
+    "selected_period": {
+      "id": "2024",
+      "kind": "full_calendar_year",
+      "start_utc": "2023-12-31T23:00:00+00:00",
+      "end_utc_exclusive": "2024-12-31T23:00:00+00:00",
+      "start_local": "2024-01-01T00:00:00+01:00",
+      "end_local_exclusive": "2025-01-01T00:00:00+01:00",
+      "n_intervals": 35136,
+      "n_unvalidated": 96,
+      "complete_calendar_year": true,
+      "label": "Calendar year 2024"
+    }
+  },
+  "battery": {
+    "e_usable_kwh": 100.0,
+    "p_charge_kw": 50.0,
+    "p_discharge_kw": 50.0,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95,
+    "soc_initial_kwh": 0.0,
+    "max_equivalent_full_cycles_per_year": 400.0
+  },
+  "battery_as_supplied": {
+    "e_usable_kwh": 100.0,
+    "p_charge_kw": 50.0,
+    "p_discharge_kw": 50.0,
+    "eta_charge": 0.95,
+    "eta_discharge": 0.95,
+    "soc_initial_kwh": 0.0,
+    "max_equivalent_full_cycles_per_year": 400.0
+  },
+  "tariffs": {
+    "customer_sale_eur_per_mwh": 130.0,
+    "peak_export_eur_per_mwh": 60.0,
+    "offpeak_export_eur_per_mwh": 30.0,
+    "peak_start_local": "08:00",
+    "peak_end_local": "20:00",
+    "weekends_offpeak": true,
+    "timezone": "Europe/Brussels",
+    "peak_start_inclusive": "08:00",
+    "peak_end_exclusive": "20:00",
+    "classification": "interval_start_local"
+  },
+  "reporting": {
+    "seasonal_plots": true,
+    "winter_iso_week": 3,
+    "spring_iso_week": 19,
+    "summer_iso_week": 26,
+    "autumn_iso_week": 41
+  },
+  "economics": {
+    "estimated_battery_cost_eur_per_kwh": 300.0,
+    "estimated_battery_cost_source": "defaults_toml",
+    "estimated_battery_capex_eur": 30000.0,
+    "selected_period_year_fraction": 1.0,
+    "annualised_from_partial_period": false,
+    "financial_baseline": "fixed_tariff_no_battery",
+    "simple_payback_explanation": "Simple payback is estimated battery CAPEX divided by annualised Energent PV-revenue increase. It excludes financing, discounting, operating costs, degradation, replacement, tax, inflation, and future tariff changes.",
+    "partial_period_warning": null,
+    "labels": {
+      "estimated_battery_capex": "Estimated battery CAPEX",
+      "annualised_energent_pv_revenue_increase": "Annualised Energent PV-revenue increase",
+      "simple_payback_period": "Simple payback period",
+      "no_payback": "No payback under these assumptions"
+    }
+  },
+  "scenarios": {
+    "no_battery": "No battery",
+    "reference": "Simple reference controller. Chronological; uses only the current quarter-hour.",
+    "self_consumption": "Best-case self-consumption using the complete selected period in advance. Not a forecast or expected operational saving.",
+    "peak_reduction": "Best-case peak reduction using the complete selected period in advance. Not a forecast or expected operational saving.",
+    "revenue": "Best-case Energent PV revenue using the complete selected period in advance. The battery first preserves the best achievable PV supply to the customer. Remaining flexibility may inject stored PV at the configured fixed tariff. The battery never charges from the grid. Not a forecast, profit, or NPV.",
+    "dynamic_injection": "Dynamic injection tariff. The battery first preserves the best achievable PV supply to the customer. Remaining battery flexibility may inject stored PV at the supplied dynamic price. The battery never charges from the grid. Not a forecast, profit, or NPV."
+  },
+  "dynamic_injection_prices": {
+    "source_path": "data/market/da_prices_qh.parquet",
+    "source_sha256": "20d11bf9d3296412b7ae24fef8972d30bc7b8b8977dff7f2fac51502bcbcd646",
+    "manifest_path": "data/market/MANIFEST.json",
+    "manifest_sha256": "297651025ca3ce17465472762b66863ee75035c9438ec39dd81bdf36424df2ba",
+    "used_standard_dataset": true,
+    "source_row_count": 403964,
+    "selected_row_count": 35136,
+    "coverage_utc": [
+      "2015-01-04T23:00:00Z",
+      "2026-07-13T21:45:00Z"
+    ],
+    "native_resolution_counts": {
+      "PT60M": 376508,
+      "PT15M": 27456
+    },
+    "hourly_values_repeated": true,
+    "selected_min_eur_mwh": -140.0,
+    "selected_max_eur_mwh": 565.46,
+    "selected_mean_eur_mwh": 70.32100182149362
+  },
+  "solvers": {
+    "self_consumption": {
+      "name": "Gurobi",
+      "gurobipy_version": "13.0.1",
+      "status": "OPTIMAL",
+      "runtime_s": 0.33899998664855957,
+      "num_vars": 105422,
+      "num_constrs": 140548,
+      "num_int_vars": 0,
+      "num_bin_vars": 0,
+      "continuous_lp": true
+    },
+    "peak_reduction": {
+      "name": "Gurobi",
+      "gurobipy_version": "13.0.1",
+      "status": "OPTIMAL",
+      "runtime_s": 0.7290000915527344,
+      "num_vars": 105422,
+      "num_constrs": 140548,
+      "num_int_vars": 0,
+      "num_bin_vars": 0,
+      "continuous_lp": true
+    },
+    "revenue": {
+      "name": "Gurobi",
+      "gurobipy_version": "13.0.1",
+      "status": "OPTIMAL",
+      "runtime_s": 0.3559999465942383,
+      "num_vars": 105409,
+      "num_constrs": 70276,
+      "num_int_vars": 0,
+      "num_bin_vars": 0,
+      "continuous_lp": true
+    },
+    "dynamic_injection": {
+      "name": "Gurobi",
+      "gurobipy_version": "13.0.1",
+      "status": "OPTIMAL",
+      "runtime_s": 0.550999641418457,
+      "num_vars": 105409,
+      "num_constrs": 70276,
+      "num_int_vars": 0,
+      "num_bin_vars": 0,
+      "continuous_lp": true
+    }
+  },
+  "soc_conventions": {
+    "comparison_initial_kwh": 0.0,
+    "optimized_terminal_equals_initial": true,
+    "reference_reports_terminal_without_forcing": true,
+    "note": "This comparison uses 0 kWh initial battery charge so energy carried in from before the selected period is not counted as additional PV."
+  },
+  "filenames": [
+    "comparison_dispatch.csv",
+    "comparison_dispatch.parquet",
+    "comparison_summary.csv",
+    "comparison_summary.json",
+    "dynamic_injection_prices.parquet",
+    "monthly_peaks.csv",
+    "monthly_summary.csv",
+    "normalized_input.parquet",
+    "plots/",
+    "plots/dynamic_injection_autumn_week41.png",
+    "plots/dynamic_injection_spring_week19.png",
+    "plots/dynamic_injection_summer_week26.png",
+    "plots/dynamic_injection_winter_week03.png",
+    "plots/peak_reduction_autumn_week41.png",
+    "plots/peak_reduction_spring_week19.png",
+    "plots/peak_reduction_summer_week26.png",
+    "plots/peak_reduction_winter_week03.png",
+    "plots/revenue_autumn_week41.png",
+    "plots/revenue_spring_week19.png",
+    "plots/revenue_summer_week26.png",
+    "plots/revenue_winter_week03.png",
+    "plots/self_consumption_autumn_week41.png",
+    "plots/self_consumption_spring_week19.png",
+    "plots/self_consumption_summer_week26.png",
+    "plots/self_consumption_winter_week03.png",
+    "resolved_config.json",
+    "run_metadata.json",
+    "source_defaults.toml"
+  ],
+  "checks": {
+    "no_battery": {
+      "battery_limits_and_balances": "passed",
+      "feasibility": {
+        "ok": true,
+        "violations": []
+      }
+    },
+    "reference": {
+      "battery_limits_and_balances": "passed",
+      "feasibility": {
+        "ok": true,
+        "violations": []
+      }
+    },
+    "self_consumption": {
+      "battery_limits_and_balances": "passed",
+      "feasibility": {
+        "ok": true,
+        "violations": []
+      }
+    },
+    "peak_reduction": {
+      "battery_limits_and_balances": "passed",
+      "feasibility": {
+        "ok": true,
+        "violations": []
+      }
+    },
+    "revenue": {
+      "battery_limits_and_balances": "passed",
+      "feasibility": {
+        "ok": true,
+        "violations": []
+      }
+    },
+    "dynamic_injection": {
+      "battery_limits_and_balances": "passed",
+      "feasibility": {
+        "ok": true,
+        "violations": []
+      }
+    }
+  }
+}

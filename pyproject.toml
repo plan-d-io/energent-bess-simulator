@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btm-sim"
+dynamic = ["version"]
+description = "Behind-the-meter battery simulator: Fluvius ingestion, physics, and best-case dispatch LPs."
+readme = "README.md"
+license = {file = "LICENSE.md"}
+requires-python = ">=3.13,<3.14"
+authors = [
+    {name = "Joannes Laveyne"},
+]
+dependencies = [
+    "pandas>=2.1",
+    "pyarrow>=14",
+    "matplotlib>=3.8",
+    "highspy>=1.8,<2",
+]
+
+[project.optional-dependencies]
+ui = [
+    "streamlit>=1.61",
+    "altair>=5.5",
+    "plotly>=5.24",
+    "pillow>=11",
+]
+dev = ["pytest>=8"]
+
+[project.urls]
+Developer = "https://www.plan-d.io/"
+Client = "https://energent.be/"
+
+[project.scripts]
+btm-normalize = "btm_sim.cli:main"
+btm-reference = "btm_sim.battery.cli:main"
+btm-self-consumption = "btm_sim.optimizer.cli:main"
+btm-peak-reduction = "btm_sim.optimizer.peak_cli:main"
+btm-revenue = "btm_sim.optimizer.revenue_cli:main"
+btm-compare = "btm_sim.compare.cli:main"
+btm-run = "btm_sim.run.cli:main"
+btm-sweep = "btm_sim.sweep.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {file = "src/btm_sim/VERSION"}
+
+[tool.setuptools.package-data]
+btm_sim = ["VERSION"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+markers = [
+    "slow: optional integration tests against private Ganda Cars samples",
+]
+addopts = "-q"

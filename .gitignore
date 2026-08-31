@@ -1,0 +1,17 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+
+build/
+dist/
+*.egg-info/
+
+outputs/
+reference/input_samples/
+
+.idea/
+.vscode/
+*.code-workspace

@@ -1,0 +1,18 @@
+{
+  "status_schema_version": 1,
+  "job_id": "btm-20260826T085032Z-37a61b84",
+  "state": "completed",
+  "stage_key": "write_artifacts",
+  "stage_number": 23,
+  "stage_total": 23,
+  "message": "Sweep completed",
+  "started_at_utc": "2026-08-26T08:50:32Z",
+  "updated_at_utc": "2026-08-26T09:03:15Z",
+  "completed_at_utc": "2026-08-26T09:03:15Z",
+  "worker_pid": 17232,
+  "elapsed_seconds": 762.98,
+  "output_dir": "ui/demo_artifacts/ganda_cars_2024_sweep",
+  "artifact_schema_version": 1,
+  "error_category": null,
+  "error_message": null
+}

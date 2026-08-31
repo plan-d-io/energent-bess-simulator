@@ -1,0 +1,70 @@
+{
+  "source_run_label": "Curated Ganda Cars 2024 comparison",
+  "copied_filenames": [
+    "comparison_summary.json",
+    "comparison_summary.csv",
+    "monthly_summary.csv",
+    "monthly_peaks.csv",
+    "run_metadata.json",
+    "resolved_config.json",
+    "source_defaults.toml",
+    "normalized_input.parquet",
+    "comparison_dispatch.parquet",
+    "dynamic_injection_prices.parquet"
+  ],
+  "skipped_filenames": [
+    "comparison_dispatch.csv"
+  ],
+  "files": [
+    {
+      "name": "comparison_summary.json",
+      "bytes": 34711,
+      "sha256": "79dc052b73defeef107fbc240611d4ad1d84873dc485d01765db2a0e7961a286"
+    },
+    {
+      "name": "comparison_summary.csv",
+      "bytes": 6969,
+      "sha256": "f083c3c52f1305e27e637ced541f19bdd1ce57e4edd0be63e690f6c40da2928e"
+    },
+    {
+      "name": "monthly_summary.csv",
+      "bytes": 56241,
+      "sha256": "514aaf1459796f11060e4f9f0952e7c7b8e9fe389368f4163bcbdd3092719c4c"
+    },
+    {
+      "name": "monthly_peaks.csv",
+      "bytes": 976,
+      "sha256": "5922fc1f6359a55a9d645924b7fe4e15265284978380f41485f140053c2f2315"
+    },
+    {
+      "name": "run_metadata.json",
+      "bytes": 13319,
+      "sha256": "a3286b91aba0927510dfa94a743b6a807d7e598eea2c6587878aa9443ae09607"
+    },
+    {
+      "name": "resolved_config.json",
+      "bytes": 3135,
+      "sha256": "9ca912d2e275d895b2bfe225da7f0fc995225945c6428ca43f5fbd7692494bed"
+    },
+    {
+      "name": "source_defaults.toml",
+      "bytes": 1783,
+      "sha256": "66df47683d8d431139e53c8f014a569ab47b76cd74b9db2999637de261b6d7e3"
+    },
+    {
+      "name": "normalized_input.parquet",
+      "bytes": 794092,
+      "sha256": "aad87e7ad071354f7b0ab4ff7d476a3403a0a6604ebc03af9100c4271066ee11"
+    },
+    {
+      "name": "comparison_dispatch.parquet",
+      "bytes": 7685308,
+      "sha256": "bf304f51c99c7898b37e29a5cca33d4d14a49e2aaa89737a462f6240a7bf274f"
+    },
+    {
+      "name": "dynamic_injection_prices.parquet",
+      "bytes": 401262,
+      "sha256": "ec1fedefcb8467834baabd303d623eb08696964c91424a17a30b58ac2b129262"
+    }
+  ]
+}
