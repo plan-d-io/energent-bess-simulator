@@ -117,7 +117,7 @@ def _render_demo(state: dict[str, Any]) -> tuple[bool, str | None]:
         render_status_panel(
             "danger",
             "Saved example unavailable",
-            "The saved Ganda Cars example is not available.",
+            "The saved demo is not available.",
         )
         return False, REASON_DEMO
     store_saved_period_context(state, context)

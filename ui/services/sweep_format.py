@@ -33,7 +33,7 @@ TRANSFER_LIVE = "Use this size in the full comparison"
 TRANSFER_DEMO = "Use this size in a live full comparison"
 TRANSFER_DISABLED_NOTE = (
     "This size cannot be transferred from the saved demonstration because the "
-    "Ganda Cars sample files are not available. Turn off Demo mode and upload "
+    "Demo sample files are not available. Turn off Demo mode and upload "
     "the files before running a live comparison."
 )
 

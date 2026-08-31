@@ -44,7 +44,7 @@ REASON_UPLOADS = "Return to Upload data and provide three Fluvius CSV files."
 REASON_DEFAULTS = (
     "The central defaults have changed. Return to Configure options and confirm the simulation settings."
 )
-REASON_DEMO_IDENTITY = "The saved Ganda Cars example is not available."
+REASON_DEMO_IDENTITY = "The saved demo is not available."
 REASON_PARTIAL = (
     "Acknowledge that results for this partial period will be annualised for the sizing estimate."
 )

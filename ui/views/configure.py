@@ -130,7 +130,7 @@ def render_configure(state: dict[str, Any]) -> None:
                 render_status_panel(
                     "danger",
                     "Saved example unavailable",
-                    "The saved Ganda Cars example is not available.",
+                    "The saved demo is not available.",
                 )
                 events = render_action_row(
                     back="Back",

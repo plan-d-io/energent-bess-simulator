@@ -16,7 +16,7 @@ REASON_INSPECTION = "Wait until the selected period has been checked."
 REASON_UNVALIDATED = "Acknowledge the unvalidated readings."
 REASON_BOUNDARY = "Acknowledge the meter-boundary mismatch."
 REASON_OTHER = "Resolve the selected-period issues above."
-REASON_DEMO = "The saved Ganda Cars example is not available."
+REASON_DEMO = "The saved demo is not available."
 
 UNVALIDATED_EMPTY_NOTE = "Only non-empty readings are used."
 SITE_BOUNDARY_CHECKBOX = (

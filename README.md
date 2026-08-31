@@ -45,10 +45,10 @@ the common period, asks for any necessary acknowledgements, and shows the
 effective settings before a worker starts. Progress and diagnostic output stay
 visible while the run is active.
 
-New result folders are written under `outputs/`. 
+New result folders are written under `outputs/`.
 
 The dynamic-injection case uses the bundled Belgian day-ahead dataset in
-`data/market/`. 
+`data/market/`.
 
 ## Defaults and assumptions
 

@@ -39,7 +39,7 @@ def test_adapter_resolves_ganda_metadata_from_report(tmp_path: Path) -> None:
     report, samples = _write_valid_example(tmp_path)
     example = load_saved_example(report_path=report, sample_dir=samples)
     assert example.ok
-    assert example.site_name == "Ganda Cars"
+    assert example.site_name == "Demo site"
     assert [row["Role"] for row in example.rows] == ["Offtake", "Injection", "PV production"]
     assert example.rows[0]["File"] == "offtake.csv"
     assert example.rows[0]["Detected register"] == "Afname Actief"

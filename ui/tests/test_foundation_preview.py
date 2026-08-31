@@ -50,7 +50,7 @@ def test_wide_shell_keeps_full_period_metric() -> None:
     assert not at.exception
     values = [item.value for item in at.metric]
     assert "Calendar year 2024" in values
-    assert "Ganda Cars" in values
+    assert "Demo site" in values
 
 
 def test_live_choice_cards_return_clicked_option() -> None:

@@ -49,7 +49,7 @@ REASON_SHARED = "Correct the tariff, cost or battery assumptions."
 REASON_DURATION = "Select at least one battery duration."
 REASON_CANDIDATES = "Resolve the battery-size list."
 REASON_BRANCH = "Correct the invalid configuration values."
-REASON_DEMO = "The saved Ganda Cars example is not available."
+REASON_DEMO = "The saved demo is not available."
 PRICE_UNAVAILABLE_TITLE = "Day-ahead prices do not cover this period"
 PRICE_UNAVAILABLE_BODY = (
     "Choose Find a battery size, or select a period covered by the price dataset."

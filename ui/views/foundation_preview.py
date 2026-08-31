@@ -1,6 +1,6 @@
 """Development-only preview of the V2 shell and shared components.
 
-This is not the simulator workflow. Figures are stored Ganda Cars 2024
+This is not the simulator workflow. Figures are stored demo-site 2024
 example values from the approved visual reference. They are not calculated.
 """
 
@@ -31,8 +31,8 @@ from ui.presentation.tokens import (
     SAVED_EXAMPLE_LABEL,
 )
 
-# Stored Ganda Cars 2024 figures from the approved TSX reference.
-_SITE = "Ganda Cars"
+# Stored demo-site 2024 figures from the approved TSX reference.
+_SITE = "Demo site"
 _PERIOD = "Calendar year 2024"
 _BATTERY = "100 kWh / 50 kW"
 _PAYBACK = "16.6 years"
@@ -116,7 +116,7 @@ def _render_wide_shell() -> None:
         )
         render_table_frame(
             title="Site totals",
-            caption="Stored Ganda Cars 2024 example · complete calendar year",
+            caption="Stored demo-site 2024 example · complete calendar year",
             data={
                 "Metric": [
                     "PV production (MWh)",
@@ -130,7 +130,7 @@ def _render_wide_shell() -> None:
             title="Highest 15-minute grid import by month (kW)",
             x_label="Month",
             y_label="Highest 15-minute grid import (kW)",
-            caption="Stored Ganda Cars 2024 example · complete local months",
+            caption="Stored demo-site 2024 example · complete local months",
             data=_stored_peak_chart(),
         )
 
@@ -186,7 +186,7 @@ def _render_demo_treatment() -> None:
         render_page_header("Step 4 of 6", "Configure options")
         st.info(
             f"**{SAVED_EXAMPLE_LABEL}: {_SITE}**\n\n"
-            "These settings belong to the saved Ganda Cars demonstration. "
+            "These settings belong to the saved demonstration. "
             "Turn off Demo mode to change them."
         )
         render_choice_cards(

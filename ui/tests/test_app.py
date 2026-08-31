@@ -180,7 +180,7 @@ def test_demo_mode_shows_readonly_site_disabled_uploader_and_table(monkeypatch) 
     assert len(at.info) == 0
     assert "Afname Actief" in combined
     site = at.text_input[0]
-    assert site.value == "Ganda Cars"
+    assert site.value == "Demo site"
     assert site.proto.disabled is True
     assert at.file_uploader[0].proto.disabled is True
     assert _button(at, "Continue").proto.disabled is False
@@ -549,7 +549,7 @@ def test_step1_reason_priority() -> None:
             kind="empty",
             demo_ok=False,
         )
-        == "Restore the Ganda Cars demo files."
+        == "Restore the demo files."
     )
     assert (
         step1_disabled_reason(
@@ -1161,7 +1161,7 @@ def test_demo_review_opens_full_comparison_results() -> None:
     assert not at.exception
     page = _text(at)
     assert "Results ready" not in page
-    assert "Ganda Cars: results" in page
+    assert "Demo site: results" in page
     assert [item.label for item in at.tabs][0] == "Overview"
     assert at.session_state[SESSION_KEY]["results"]["source"] == "demo"
     assert "job" not in at.session_state[SESSION_KEY]

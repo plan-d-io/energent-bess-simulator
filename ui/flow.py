@@ -18,7 +18,7 @@ ROUTE_SAVED: DataRoute = "saved"
 UPLOAD_ORIGIN_BROWSER = "browser"
 UPLOAD_ORIGIN_TRANSFER = "transfer"
 
-SAVED_SITE_NAME = "Ganda Cars"
+SAVED_SITE_NAME = "Demo site"
 
 PERIOD_SELECT_KEY = "v2_period_select"
 UNVALIDATED_ACK_WIDGET_KEY = "v2_ack_unvalidated"

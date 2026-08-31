@@ -1,4 +1,4 @@
-"""Read verified Ganda Cars saved-example metadata. Does not import V1."""
+"""Read verified saved-example metadata. Does not import V1."""
 
 from __future__ import annotations
 
@@ -18,7 +18,8 @@ from ui.services.uploads import (
     _source_dict,
 )
 
-SITE_NAME = "Ganda Cars"
+SITE_NAME = "Demo site"
+ARTIFACT_SITE_NAME = "Ganda Cars"
 EXPECTED_PERIOD_ID = "2024"
 EXPECTED_UNVALIDATED_COUNT = 96
 EXPECTED_UNVALIDATED_DATE = "2024-10-02"
@@ -71,7 +72,7 @@ def load_saved_example(
         ok=False,
         site_name=SITE_NAME,
         rows=(),
-        error="The saved Ganda Cars example is not available.",
+        error="The saved demo is not available.",
     )
     try:
         report, used_report = _read_report(root=root, report_path=report_path)
@@ -119,7 +120,7 @@ def _blocked_snapshot(message: str | None = None) -> dict[str, Any]:
         "dst": {},
         "error": {
             "code": "SAVED_EXAMPLE_UNAVAILABLE",
-            "message": message or "The saved Ganda Cars example is not available.",
+            "message": message or "The saved demo is not available.",
         },
     }
 
@@ -188,7 +189,7 @@ def load_saved_snapshot(
     if used_report is None or not isinstance(report, Mapping):
         return _blocked_snapshot()
     if report.get("periods") is not None and not isinstance(report.get("periods"), list):
-        return _blocked_snapshot("The saved Ganda Cars example is not available.")
+        return _blocked_snapshot("The saved demo is not available.")
     snapshot = project_validation_report(report)
     roles = snapshot.get("roles") or {}
     if not all(isinstance(roles.get(role), Mapping) and roles[role].get("register") for role in ROLE_ORDER):
@@ -255,7 +256,7 @@ def _blocked_period_context(message: str | None = None) -> dict[str, Any]:
         "ok": False,
         "error": {
             "code": "SAVED_EXAMPLE_UNAVAILABLE",
-            "message": message or "The saved Ganda Cars example is not available.",
+            "message": message or "The saved demo is not available.",
         },
         "period_id": EXPECTED_PERIOD_ID,
         "unvalidated_ack": False,
@@ -389,7 +390,7 @@ def _blocked_configure_context(message: str | None = None) -> dict[str, Any]:
         "ok": False,
         "error": {
             "code": "SAVED_EXAMPLE_UNAVAILABLE",
-            "message": message or "The saved Ganda Cars example is not available.",
+            "message": message or "The saved demo is not available.",
         },
         "configure": None,
     }
@@ -421,7 +422,7 @@ def load_saved_configure_context(
     sweep_request_path: Path | None = None,
     site_analysis_path: Path | None = None,
 ) -> dict[str, Any]:
-    """Read-only Ganda Configure values from the matching saved artifacts."""
+    """Read-only demo Configure values from the matching saved artifacts."""
     period = load_saved_period_context(root=root)
     if not period.get("ok"):
         return _blocked_configure_context()
@@ -444,7 +445,7 @@ def load_saved_configure_context(
     economics = (resolved.get("resolved") or {}).get("economics")
     if not all(isinstance(item, Mapping) for item in (battery, tariffs, reporting, economics)):
         return _blocked_configure_context()
-    if str(request.get("site_label") or "") != SITE_NAME:
+    if str(request.get("site_label") or "") != ARTIFACT_SITE_NAME:
         return _blocked_configure_context()
     if str(request.get("period_id") or "") != EXPECTED_PERIOD_ID:
         return _blocked_configure_context()

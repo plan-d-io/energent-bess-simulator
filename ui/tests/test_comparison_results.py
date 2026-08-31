@@ -39,7 +39,7 @@ def test_demo_one_battery_opens_full_comparison_results() -> None:
     assert not at.exception
     page = _text(at)
     assert "Results ready" not in page
-    assert "Ganda Cars: results" in page
+    assert "Demo site: results" in page
     assert "Stored demonstration result. Not recalculated." in page
     assert [item.label for item in at.tabs] == list(TAB_NAMES)
     for heading in OVERVIEW_GROUPS:

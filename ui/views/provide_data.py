@@ -54,7 +54,7 @@ REASON_UPLOAD = "Upload the three Fluvius CSV files."
 REASON_EXACT = "Upload exactly three Fluvius CSV files."
 REASON_WAIT = "Wait until the files have been checked."
 REASON_RESOLVE = "Resolve the file errors above."
-REASON_DEMO = "Restore the Ganda Cars demo files."
+REASON_DEMO = "Restore the demo files."
 
 
 def live_view_kind(
@@ -232,7 +232,7 @@ def _render_demo_body(state: dict[str, Any]):
     else:
         render_status_panel(
             "danger",
-            "The Ganda Cars example is not available",
+            "The saved demo is not available",
             example.error or "The required source metadata is missing.",
         )
         store_inspection(
