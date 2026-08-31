@@ -1,11 +1,8 @@
 # Energent BESS Simulator
 
-<p>
-  <a href="https://energent.be/"><img src="ui/assets/Energent.png" alt="Energent" width="180" align="left"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.plan-d.io/"><img src="ui/assets/Plan%20D-small-transparent.png" alt="Plan-D" width="200" align="right"></a>
+<p align="left">
+  <a href="https://energent.be/"><img src="ui/assets/Energent.png" alt="Energent" width="180"></a>
 </p>
-<br clear="both">
 
 An analysis tool for behind-the-meter
 battery projects. It reads quarter-hourly Fluvius CSV exports, compares six
@@ -15,9 +12,6 @@ The application is intended for expert users. Its results are estimates under
 the configured assumptions. They are not operational forecasts, customer bill
 calculations, vendor quotations, profit, net present value, or a complete
 business case.
-
-Made by [Plan-D.io](https://www.plan-d.io/), for
-[Energent cvba](https://energent.be/). See [AUTHORS.md](AUTHORS.md).
 
 ## Quick start (for Windows users)
 
@@ -111,3 +105,11 @@ This project is distributed under the
 [PolyForm Noncommercial License 1.0.0](LICENSE.md). Noncommercial use,
 modification, and distribution are permitted under those terms. Commercial use
 requires separate permission from the licensor.
+
+## Made by
+
+Made by [Plan-D.io](https://www.plan-d.io/), for [Energent cvba](https://energent.be/). See [AUTHORS.md](https://github.com/plan-d-io/energent-bess-simulator/blob/main/AUTHORS.md).
+
+<p align="right">
+  <a href="https://www.plan-d.io/"><img src="ui/assets/Plan%20D-small-transparent.png" alt="Plan-D" width="200"></a>
+</p>
