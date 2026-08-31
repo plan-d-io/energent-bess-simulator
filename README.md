@@ -1,54 +1,36 @@
 # Energent BESS Simulator
 
-The Energent BESS Simulator is a local screening tool for behind-the-meter
-battery projects. It reads three quarter-hourly Fluvius exports, compares six
-dispatch cases for one battery, and can screen a finite range of battery sizes.
+An analysis tool for behind-the-meter
+battery projects. It reads quarter-hourly Fluvius CSV exports, compares six
+dispatch cases for one battery, or it can screen a range of battery sizes.
 
 The application is intended for expert users. Its results are estimates under
 the configured assumptions. They are not operational forecasts, customer bill
 calculations, vendor quotations, profit, net present value, or a complete
 business case.
 
-Made by Joannes Laveyne of [Plan-D.io](https://www.plan-d.io/), for
+Made by [Plan-D.io](https://www.plan-d.io/), for
 [Energent cvba](https://energent.be/). See [AUTHORS.md](AUTHORS.md).
 
-## Windows quick start
+## Quick start (for Windows users)
 
-You need:
+First, make sure you have **Python 3.13** installed. We suggest getting it from the Microsoft Store.
 
-- 64-bit Python 3.13;
-- an internet connection during the first setup;
-- enough free disk space for the Python environment and generated results.
-
-If you install Python from the Microsoft Store, open a new terminal after the
-installation finishes.
-
-1. Clone this repository, or download and extract its ZIP file.
-2. Double-click `setup.cmd`. It creates a private `.venv` and installs the
-   tested dependencies, including the open-source HiGHS solver.
-3. Double-click `start.cmd`.
-4. Open the local address shown in the terminal if the browser does not open
+Then:
+1. Clone this repository, or download and extract its ZIP file (`Code` button in the upper right corner > `Download ZIP`) .
+2. Extract the contents of the ZIP to a folder on your disk with write access.
+3. Double-click `setup.cmd`. It creates a private `.venv` and installs the
+   tested dependencies. This might take a while.
+4. Double-click `start.cmd`.
+5. Open the local address shown in the terminal if the browser does not open
    automatically.
 
-You do not need Gurobi or a Gurobi licence.
-
-If setup cannot find a custom Python installation, run the following in
-Command Prompt before `setup.cmd`:
-
-```bat
-set BTM_PYTHON=C:\path\to\Python313\python.exe
-setup.cmd
-```
-
-Run `setup.cmd` again after pulling a new version. It keeps the existing
-environment and updates its packages to the tested versions.
+For any use after this, just use `start.cmd` again.
 
 ## Try the saved demonstration
 
-Enable **Demo mode: Ganda Cars** on the first page. You can walk through both
-the one-battery comparison and battery-size screening without running an
-optimization. The repository contains only the curated result artifacts needed
-for that walkthrough, not the original customer CSV exports.
+Enable **Demo mode** on the first page if you want discover the tool without running a simulation. You can walk through both
+the one-battery comparison and battery-size screening results.
 
 ## Run your own analysis
 
@@ -63,14 +45,10 @@ the common period, asks for any necessary acknowledgements, and shows the
 effective settings before a worker starts. Progress and diagnostic output stay
 visible while the run is active.
 
-New result folders are written under `outputs/`. This directory is ignored by
-Git. Raw customer CSVs are not part of the repository and should not be
-committed.
+New result folders are written under `outputs/`. 
 
 The dynamic-injection case uses the bundled Belgian day-ahead dataset in
-`data/market/`. Its manifest records the source, transformation, coverage, and
-SHA-256 hash. A selected period outside that coverage is rejected rather than
-silently using another tariff.
+`data/market/`. 
 
 ## Defaults and assumptions
 
@@ -118,9 +96,7 @@ Install the test dependency and run the public test suites:
 .\.venv\Scripts\python.exe -m pytest tests ui\tests -q
 ```
 
-The production optimizer is HiGHS. The repository retains an optional Gurobi
-backend for differential development tests, but normal installation and use do
-not import or require it.
+The production optimizer is HiGHS.
 
 ## Licence
 
