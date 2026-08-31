@@ -21,8 +21,8 @@ Then:
 1. Clone this repository, or download and extract its ZIP file (`<> Code` button in the upper right corner > `Download ZIP`) .
 2. Extract the contents of the ZIP to a folder on your disk with write access.
 3. Double-click `setup.cmd`. It creates a private `.venv` and installs the
-   tested dependencies. This might take a while.
-4. Double-click `start.cmd`.
+   tested dependencies. This might take a while. Make sure to allow it internet access.
+4. When the setup script has finished, double-click `start.cmd`.
 5. Open the local address shown in the terminal if the browser does not open
    automatically.
 
