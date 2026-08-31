@@ -3,8 +3,6 @@
 This file records modelling decisions that must be visible in every run. Update
 it when a decision changes; do not silently change defaults in code.
 
-## Settled on 2026-08-18
-
 ### Ownership and settlement
 
 - Energent owns the PV installation and battery.
