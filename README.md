@@ -26,7 +26,7 @@ Then:
 5. Open the local address shown in the terminal if the browser does not open
    automatically.
 
-For any use after this, just use `start.cmd` again.
+For any use after this, just use `start.cmd` again. To close the app, close your browser and the command prompt window.
 
 ## Try the saved demonstration
 
