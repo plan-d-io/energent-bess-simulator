@@ -1,10 +1,11 @@
 # Energent BESS Simulator
 
-<p align="center">
+<p>
   <a href="https://energent.be/"><img src="ui/assets/Energent.png" alt="Energent" width="180" align="left"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.plan-d.io/"><img src="ui/assets/Plan%20D-small-transparent.png" alt="Plan-D" width="200" align="right"></a>
 </p>
+<br clear="both">
 
 An analysis tool for behind-the-meter
 battery projects. It reads quarter-hourly Fluvius CSV exports, compares six
