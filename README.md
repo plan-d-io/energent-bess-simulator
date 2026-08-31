@@ -18,7 +18,7 @@ business case.
 First, make sure you have **Python 3.13** installed. We suggest getting it from the Microsoft Store.
 
 Then:
-1. Clone this repository, or download and extract its ZIP file (`Code` button in the upper right corner > `Download ZIP`) .
+1. Clone this repository, or download and extract its ZIP file (`Code` button in the upper right corner > `<> Download ZIP`) .
 2. Extract the contents of the ZIP to a folder on your disk with write access.
 3. Double-click `setup.cmd`. It creates a private `.venv` and installs the
    tested dependencies. This might take a while.
